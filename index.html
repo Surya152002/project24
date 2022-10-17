@@ -3,6 +3,22 @@
         <title>
             Oriebtation
         </title>
+        <style>
+            .shape {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            -webkit-radius: 50px;
+            margin:0;
+            padding:0;
+            border-radius: 50px;
+                background-color: blue;
+            }
+            #sphere1{
+                border-radius: 50px;
+                background-color: blue;
+                }
+        </style>
         <script>
             window.addEventListener('deviceorientation',handleOrientation);
             function handleOrientation(event){
@@ -40,6 +56,6 @@
     </head>
     <body>
         <!--<div id="output"></div>-->
-        <canvas id="canvas_output"></canvas>
+        <canvas class="shape" id="canvas_output"></canvas>
     </body>
 </html>
