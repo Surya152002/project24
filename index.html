@@ -45,7 +45,7 @@
                 }
                 var location={
                     x:location0.x,
-                    y:location0.y
+                    y:location0.y+event["beta"]*2
                 }
                 context.beginPath();
                 context.arc(location.x,location.y,radius,0,2*Math.PI);
