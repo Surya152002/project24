@@ -8,7 +8,7 @@
             
             
             border-radius: 50px;
-                background-color:rgb(105, 105, 146);
+                background-color: rgb(105, 105, 146);
             }
             #sphere1{
                 border-radius: 50px;
@@ -35,12 +35,13 @@
                 canvas.height=window.innerHeight;
                 var context=canvas.getContext("2d");
                 var radius=Math.min(canvas.width,canvas.height)/10;
+                
                 var location0={
                     x:canvas.width/2,
                     y:canvas.height/2
                 }
                 var location={
-                    x:location0.xevent["alpha"]*3,
+                    x:location0.x+event["alpha"]*4,
                     y:location0.y+event["beta"]*3
                 }
                 context.beginPath();
